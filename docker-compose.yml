@@ -1,0 +1,47 @@
+version: "3"
+services:
+  backend:
+    container_name: backend-laravel
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/var/www/html
+    networks:
+      - postgres
+
+  frontend:
+    container_name: front-end-next
+    build:
+      dockerfile: DockerfileNextjs
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    networks:
+      - postgres
+
+  postgres:
+    container_name: postgres_db
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /data/postgres
+      POSTGRES_DB: vehicles
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+
+networks:
+  postgres:
+    driver: bridge
+
+volumes:
+  postgres:
