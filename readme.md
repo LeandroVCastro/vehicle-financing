@@ -1,4 +1,4 @@
-# Teste Listra Digital
+# Simulador financiamento de veículos
 
 ### Para iniciar o projeto, siga os passos abaixo
 
@@ -41,4 +41,4 @@ php artisan db:seed --class=VehiclesSeeder
 - Disponível em: [http://0.0.0.0:5432](http://0.0.0.0:5432)
 - User: postgres
 - Password: postgres
-- Database: listra_db
+- Database: vehicles
