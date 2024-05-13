@@ -2,7 +2,10 @@
 
 ### Para iniciar o projeto, siga os passos abaixo
 
-#### Faça o build da imagem dos containers
+#### Configurar .env
+
+- Duplique o arquivo `./backend/.env.example` e renomei-o para `.env`
+- Duploque o arquivo `./frontend/.env.example` e renomei-o para `.env`
 
 #### Rode o container docker
 

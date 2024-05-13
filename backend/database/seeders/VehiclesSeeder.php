@@ -52,7 +52,7 @@ class VehiclesSeeder extends Seeder
             'description' => 'O Chevrolet Camaro 2013 é um ícone da potência e do estilo americano, oferecendo uma experiência de condução emocionante e impressionante. Com seu design musculoso e aerodinâmico, o Camaro é instantaneamente reconhecido em qualquer estrada. Equipado com um motor V6 ou V8, proporciona um desempenho excepcional, entregando uma combinação de velocidade, potência e resposta rápida ao acelerador. Seu interior combina conforto e tecnologia, oferecendo uma variedade de recursos modernos e um ambiente luxuoso para motorista e passageiros. Combinando performance de alto nível com um visual cativante, o Camaro 2013 é uma escolha definitiva para entusiastas de carros esportivos.',
             'year' => 2013,
             'km' => 38021,
-            'gear' => 'manual',
+            'gear' => 'auto',
             'phone' => '(31) 98888-6666',
             'price' => 12200000
         ]);

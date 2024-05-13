@@ -23,6 +23,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
 # Copy the rest of your application code
+RUN rm -rf /var/www/html/backend
 COPY ./backend /var/www/html/backend
 
 WORKDIR /var/www/html/backend
@@ -43,7 +44,7 @@ RUN php artisan config:cache
 EXPOSE 8000
 EXPOSE 5432
 
-
+RUN rm -rf /tmp/vendor
 RUN mv vendor /tmp/vendor
 
 # Start Laravel development server

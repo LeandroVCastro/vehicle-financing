@@ -1,0 +1,89 @@
+.box {
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.boxShadow {
+  box-shadow: 0px 1px 3px 0px #00000040;
+}
+
+.lineBottom::after {
+  display: block;
+  width: 55px;
+  height: 3px;
+  top: 532px;
+  left: 416px;
+  border-radius: 22px 0px 0px 0px;
+  content: "";
+  background-color: #7d28f7;
+  margin-top: 15px;
+}
+
+.simulateButton {
+  margin-left: 10px;
+  background-color: #7d28f7;
+  padding: 10px 32px 10px 32px;
+  border-radius: 50px;
+  color: #fff;
+  border-style: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.subTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.pricePortion {
+  font-size: 25px;
+  font-weight: 700;
+  color: #7d28f7;
+}
+
+.ipvaFree {
+  background-color: #7d28f7;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding: 5px 8px 5px 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.citySpan {
+  padding: 5px 8px 5px 8px;
+  border-radius: 0px 16px 16px 0px;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.contactButton {
+  background: #1abb59;
+  height: 40px;
+  border-radius: 50px;
+  padding: 10px 40px;
+  border: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.contactSpan {
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 16px;
+}
