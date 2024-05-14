@@ -1,3 +1,7 @@
+.mainContainer {
+  padding: 30px;
+}
+
 .box {
   background-color: #fafafa;
   border-radius: 8px;
@@ -122,6 +126,24 @@
   position: relative;
 }
 
+.containerVehicleSelectedPlusSimulation {
+  display: flex;
+  margin-top: 20px;
+}
+
+.containerVehicleSelected {
+  margin-right: 28px;
+}
+
+.boxVehicleSelected {
+  flex: 1;
+  width: auto;
+}
+
+.boxSimulation {
+  flex: 3;
+}
+
 .containerVehicleDetails {
   display: flex;
   justify-content: space-between;
@@ -143,4 +165,55 @@
   font-size: 30px;
   margin: 30px 0px;
   font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  .mainContainer {
+    padding: 10px;
+  }
+  .selectVehicle {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .entryValueInput {
+    width: 100%;
+  }
+  .simulateButton {
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+  }
+  .containerVehicleSelectedPlusSimulation {
+    flex-direction: column;
+  }
+  .boxVehicleSelected {
+    flex: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .containerVehicleSelected {
+    margin-right: 0px;
+
+  }
+  .boxSimulation {
+    flex: none;
+  }
+  .princingContainer {
+    width: 100%;
+  }
+  .ipvaFree {
+    font-size: 12px;
+  }
+  .smallPrincigBoxContainer {
+    flex-direction: column;
+  }
+  .contactButton {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contactSpan {
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }

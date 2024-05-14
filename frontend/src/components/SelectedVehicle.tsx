@@ -20,10 +20,7 @@ export default function SelectedVehicleComponent() {
 
   return (
     <div
-      className={`${style.box} ${style.boxShadow}`}
-      style={{
-        marginRight: "28px",
-      }}
+      className={`${style.box} ${style.boxShadow} ${style.containerVehicleSelected}`}
     >
       {selectedVehicle && (
         <>

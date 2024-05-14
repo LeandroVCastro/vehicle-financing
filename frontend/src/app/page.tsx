@@ -2,6 +2,7 @@ export const revalidate = 3600; // revalidate at most every hour
 
 import VehiclesComponent from "./Vehicles";
 import { Vehicle } from "@/contexts/VehiclesContext";
+import style from "./style.module.css";
 
 const getVechicles = async () => {
   const response = await fetch(`${process.env.API_URL}vehicles`);
@@ -15,7 +16,7 @@ export default async function Home() {
   const vehicles: Vehicle[] = await getVechicles();
 
   return (
-    <main style={{ padding: "30px" }}>
+    <main className={style.mainContainer}>
       <VehiclesComponent vehicles={vehicles} />
     </main>
   );

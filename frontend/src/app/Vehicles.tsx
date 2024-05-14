@@ -45,11 +45,11 @@ export default function VehiclesComponent({ vehicles }: Props) {
         <EntryValueComponent />
         <SimulateButtonComponent />
       </div>
-      <div style={{ display: "flex", marginTop: "20px" }}>
-        <div style={{ flex: "1" }}>
+      <div className={style.containerVehicleSelectedPlusSimulation}>
+        <div className={style.boxVehicleSelected}>
           <SelectedVehicleComponent />
         </div>
-        <div style={{ flex: "3" }}>
+        <div className={style.boxSimulation}>
           <SimulationComponent />
         </div>
       </div>

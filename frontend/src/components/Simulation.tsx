@@ -17,7 +17,7 @@ export default function SimulationComponent() {
       {simulated && selectedVehicle && (
         <div className={style.box} style={{ padding: "25px" }}>
           {}
-          <h4 className={`${style.subTitle}  ${style.lineBottom}`}>
+          <h4 className={`${style.subTitle} ${style.lineBottom}`}>
             Valores simulados para você
           </h4>
           {(entryValue ?? 0) < selectedVehicle.price ? (
