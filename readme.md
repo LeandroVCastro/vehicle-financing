@@ -13,22 +13,16 @@
 docker compose up --build -d
 ```
 
-#### Acesse o container
-
-```bash
-docker exec -it backend-laravel /bin/bash
-```
-
 #### Rode as migrations
 
 ```bash
-php artisan migrate
+docker exec -it backend-laravel php artisan migrate
 ```
 
 #### Execute a seed para popular o banco de dados
 
 ```bash
-php artisan db:seed --class=VehiclesSeeder
+docker exec -it backend-laravel php artisan db:seed --class=VehiclesSeeder
 ```
 
 ## Frontend (Acesse a interface da aplicação por aqui)
