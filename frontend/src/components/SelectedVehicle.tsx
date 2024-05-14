@@ -45,39 +45,24 @@ export default function SelectedVehicleComponent() {
             <h4 className={style.subTitle}>
               {selectedVehicle.brand} - {selectedVehicle.model}
             </h4>
-            <p style={{ fontSize: "14px", fontWeight: 400, marginTop: "8px" }}>
+            <p className={style.descriptionSelectedVehicle}>
               {selectedVehicle.description}
             </p>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                marginTop: "15px",
-              }}
-            >
+            <div className={style.containerVehicleDetails}>
               <div>
-                <FontAwesomeIcon
-                  icon={faCalendarDay}
-                  style={{ marginRight: "5px" }}
-                />
+                <FontAwesomeIcon icon={faCalendarDay} />
                 {selectedVehicle.year}
               </div>
               <div>
-                <FontAwesomeIcon
-                  icon={faGaugeHigh}
-                  style={{ marginRight: "5px" }}
-                />
+                <FontAwesomeIcon icon={faGaugeHigh} />
                 {selectedVehicle.km.toLocaleString()}
               </div>
               <div>
-                <FontAwesomeIcon
-                  icon={faGears}
-                  style={{ marginRight: "5px" }}
-                />
+                <FontAwesomeIcon icon={faGears} />
                 {selectedVehicle.gear === "auto" ? "Automático" : "Manual"}
               </div>
             </div>
-            <p style={{ fontSize: "26px", fontWeight: 700, marginTop: "15px" }}>
+            <p className={style.totalPrincigText}>
               R$ {(selectedVehicle.price / 100).toLocaleString()}
             </p>
           </div>

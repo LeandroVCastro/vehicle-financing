@@ -19,6 +19,18 @@
   margin-top: 15px;
 }
 
+.selectVehicle {
+  height: 50px;
+  width: 300px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+.entryValueInput {
+  height: 50px;
+  padding-left: 10px;
+}
+
 .simulateButton {
   margin-left: 10px;
   background-color: #7d28f7;
@@ -86,4 +98,42 @@
   font-size: 15px;
   font-weight: 700;
   margin-left: 16px;
+}
+
+.smallPrincigBoxContainer {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.totalPrincigText {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.princingContainer {
+  width: 450px;
+}
+
+.pricingBox {
+  flex: 1 2 auto;
+  padding: 15px;
+  position: relative;
+}
+
+.containerVehicleDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.containerVehicleDetails svg {
+  margin-right: 5px;
+}
+
+.descriptionSelectedVehicle {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 8px;
 }

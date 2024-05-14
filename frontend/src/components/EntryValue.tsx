@@ -4,6 +4,7 @@ import {
 } from "@/contexts/VehiclesContext";
 import { useContext, useState } from "react";
 import CurrencyInput from "react-currency-input-field";
+import style from "../app/style.module.css";
 
 export default function EntryValueComponent() {
   const { selectedVehicle, setEntryValue } = useContext(
@@ -29,7 +30,7 @@ export default function EntryValueComponent() {
               setEntryValue(values && values.float ? values.float * 100 : 0);
               setValue(newValue);
             }}
-            style={{ height: "50px", paddingLeft: "10px" }}
+            className={style.entryValueInput}
           />
         </>
       )}
