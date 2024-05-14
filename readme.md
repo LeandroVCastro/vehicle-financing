@@ -45,3 +45,17 @@ php artisan db:seed --class=VehiclesSeeder
 - User: postgres
 - Password: postgres
 - Database: vehicles
+
+## Testes unitários
+
+### Backend
+
+```bash
+docker exec backend-laravel php artisan test
+```
+
+### Frontend
+
+```bash
+docker exec front-end-next npm run test
+```
