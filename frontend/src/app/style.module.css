@@ -137,3 +137,10 @@
   font-weight: 400;
   margin-top: 8px;
 }
+
+.errorSimulation {
+  color: rgb(224, 56, 56);
+  font-size: 30px;
+  margin: 30px 0px;
+  font-weight: 700;
+}
